@@ -39,6 +39,7 @@ export default (state = initialState, action) => {
 
 export const getCustomersApi = () => async (dispatch, getState) => {
     const state = getState();
+    console.log(state);
     dispatch(startSubmit());
     try {
         const response = await fetch(API, { method: 'GET' });

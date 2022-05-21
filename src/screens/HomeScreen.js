@@ -1,4 +1,7 @@
-import { View, Button } from 'react-native';
+import { View } from 'react-native';
+
+import SplashScreen from 'react-native-splash-screen'
+
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
@@ -10,6 +13,7 @@ import Map from '../components/Map';
 
 const HomeScreen = ({ getCustomersApi, navigation }) => {
   useEffect(() => {
+    SplashScreen.hide();
     getCustomersApi();
   }, []);
 

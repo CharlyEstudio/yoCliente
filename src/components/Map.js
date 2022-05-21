@@ -23,6 +23,16 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
         alignItems: 'flex-start',
     },
+    containerLoad: {
+        height: ScreenHeight,
+        width: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    textLoad: {
+        fontSize: 15,
+        fontWeight: '700'
+    },
     map: {
         ...StyleSheet.absoluteFillObject,
     },
@@ -64,8 +74,8 @@ const Map = ({ gpsLocation, timeZone, latlng, timeNow }) => {
 
     if (!latlng.latitude) {
         return (
-            <View style={styles.container}>
-                <Text>Obteniendo ubicación...</Text>
+            <View style={styles.containerLoad}>
+                <Text style={styles.textLoad}>Un momento, estamos llegando a ti!</Text>
             </View>
         );
     }

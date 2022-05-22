@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
     },
     subtitle: {
         fontSize: 12,
+        width: '100%'
     },
     title: {
         fontSize: 20,

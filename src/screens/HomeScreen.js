@@ -11,6 +11,8 @@ import { getCustomersApi } from '../reducers/customers';
 // Components
 import Map from '../components/Map';
 
+// TODO
+
 const HomeScreen = ({ getCustomersApi }) => {
     useEffect(() => {
         SplashScreen.hide();

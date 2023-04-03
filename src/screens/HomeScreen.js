@@ -16,6 +16,7 @@ const HomeScreen = ({ getCustomersApi }) => {
         SplashScreen.hide();
         getCustomersApi();
     }, []);
+	// TODO
 
     return (
         <View>
